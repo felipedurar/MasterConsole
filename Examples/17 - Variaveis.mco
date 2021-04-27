@@ -1,0 +1,9 @@
+MOD RC #True
+
+Var Idade $14
+
+MOD SC $Eu_tenho_
+MOD SC @Idade
+MOD SC $_anos.
+
+Pause APE

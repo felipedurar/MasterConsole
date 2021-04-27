@@ -1,0 +1,13 @@
+MOD RC #True
+MOD A1 $Helo_World
+
+CALL ShowStr A1
+
+MOD SC $Antes_da_funcao
+
+Function ShowStr:Text
+    MOD SC @Text
+    MOD SC $JL
+End Function
+
+Pause APE

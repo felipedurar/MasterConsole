@@ -1,0 +1,17 @@
+MOD RC #True
+
+* Ele é um pouco parecido com a pilha da linguagem Assembly *
+* O Extern Comunication foi feito para diversos usos, estre eles a comunicação entre arquivos externos *
+* Ele pode ser utilizado como sistema de variaveis *
+EC ADD $Idade $14
+EC ADD $Nome $Felipe
+
+* Mostra na tela *
+MOD SC $Meu_nome_e_
+MOD SC @Nome
+MOD SC $_e_tenho_
+MOD SC @Idade
+MOD SC $_anos.
+
+* Pausa *
+Pause APE

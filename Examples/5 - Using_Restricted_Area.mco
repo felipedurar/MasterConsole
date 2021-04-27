@@ -1,0 +1,18 @@
+MOD RC #True
+
+Restricted Area MyArea
+    MOD SC $JL
+    MOD SC $Dentro_da_area_restrita
+    MOD SC $JL
+End Area
+
+Area Normal
+MOD SC $JL
+MOD SC $Dentro_da_area_normal
+MOD SC $JL
+
+Sleep 1000
+
+GoTo MyArea
+
+Pause APE

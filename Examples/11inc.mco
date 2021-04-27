@@ -1,0 +1,7 @@
+MOD RC #True
+
+Restricted Area Helo
+    MOD A1 $Este_trecho_de_codigo_esta_no_arquivo_11inc.mco_mas_esta_sendo_chamado_pelo_exemplo_11
+    MOD SC A1
+    GoTo Final
+End Area

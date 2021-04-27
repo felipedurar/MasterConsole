@@ -1,0 +1,10 @@
+MOD RC #True
+
+Var N1 $Helo_
+Var N2 $World
+
+StrAdd A1 @N1 @N2
+
+MOD SC A1
+
+Pause APE

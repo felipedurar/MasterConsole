@@ -1,0 +1,22 @@
+MOD RC #True
+MOD A2 #False
+
+Restricted Area GetTime
+    MOD SC $Digite_o_tempo_em_milesimos:_
+    MOD A1 KB
+    MOD SC $JL
+    MOD A2 #True
+End Area
+
+If A2 = $0
+GoTo GetTime
+
+Sleep A1
+
+MOD SC $JL
+MOD SC $Cabou_o_tempo!
+
+Beep $10
+
+Area Final
+Pause APE

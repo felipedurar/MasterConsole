@@ -1,0 +1,22 @@
+* Exemplo de Helo World *
+* Ativa o RC para uso de espaços *
+MOD RC #True
+
+* Muda a area A1 *
+MOD A1 $Helo_World
+
+* Area *
+Area LoopA
+
+* Muda o valor da tela *
+MOD SC A1
+MOD SC $JL
+
+* Aguarda *
+Sleep 1000
+
+* Goto *
+GoTo LoopA
+
+* Pausa *
+Pause APK

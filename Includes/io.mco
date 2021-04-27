@@ -1,0 +1,49 @@
+MOD RC #True
+* ------- Colors -------- *
+Var Black $0
+Var Blue $1
+Var Green $2
+Var Green_Water $3
+Var Red $4
+Var Purple $5
+Var Yellow $6
+Var White $7
+Var Gray $8
+Var Light_Blue $9
+Var Light_Green $A
+Var Light_Green_Water $B
+Var Light_Red $C
+Var Lilac $D
+Var Light_Yellow $E
+Var Bright_White $F
+
+* ------ Functions ------ *
+Function ShowString:Text
+    MOD SC @Text
+End Function
+
+Function JumpLine:Lines
+    MOD IR $0
+Area JLL
+    MOD SC $JL
+    MAT IR IR + $1
+    If IR < @Lines
+    GoTo JLL
+    * Else 
+    * End
+End Function
+
+Function SetColor:ColorF;Back
+    StrAdd IR $Color_ @ColorF
+    StrAdd IR IR @Back
+    MOD CM IR
+End Function
+
+Function Clear:
+    MOD CM $CLS
+End Function
+
+Function Set_Title:Title
+    StrAdd IR $Title_ @Title
+    MOD CM IR
+End Function

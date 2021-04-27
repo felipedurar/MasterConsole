@@ -1,0 +1,22 @@
+MOD RC #True
+
+MOD A1 $10
+MOD A2 $11
+
+If A1 > A2
+GoTo Maior
+GoTo Menor
+GoTo Final
+
+Area Maior
+MOD SC $JL
+MOD SC $A1_e_maior_que_A2
+GoTo Final
+
+Area Menor
+MOD SC $JL
+MOD SC $A1_e_menor_que_A2
+GoTo Final
+
+Area Final
+Pause APE

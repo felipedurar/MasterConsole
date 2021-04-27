@@ -1,0 +1,19 @@
+MOD RC #True
+
+MOD A2 $10
+MOD A3 $2
+
+* A1 é onde sera salvo o resultado, A2 e A3 são os números a ser divididos
+MAT A1 A2 / A3
+
+MOD SC $10_dividido_por_2_e_igual_a_
+MOD SC A1
+
+MOD SC $JL
+
+MAT A1 A3 * A2
+
+MOD SC $2_vezes_10_e_igual_a_
+MOD SC A1
+
+Pause APE

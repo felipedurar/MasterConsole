@@ -1,0 +1,6 @@
+Include 11inc.mco
+
+GoTo Helo
+
+Area Final
+Pause APE

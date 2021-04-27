@@ -1,0 +1,11 @@
+Include io.mco
+
+Function main:
+    CALL SetColor @White @Black
+    CALL ShowString $Helo_World
+    CALL JumpLine $1
+End Function
+
+CALL main
+
+Pause APE

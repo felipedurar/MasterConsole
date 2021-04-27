@@ -1,0 +1,22 @@
+MOD A1 $10
+MOD A2 $11
+
+If A1 = A2
+GoTo Igual
+
+
+GoTo NIgual
+GoTo Final
+
+Area NIgual
+MOD SC $JL
+MOD SC $Nigual
+GoTo Final
+
+Area Igual
+MOD SC $JL
+MOD SC $igual
+GoTo Final
+
+Area Final
+Pause APE

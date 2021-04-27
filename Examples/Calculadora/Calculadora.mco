@@ -1,0 +1,68 @@
+Include io.mco
+Include calco.mco
+CALL Set_Title $Rapcon_Calculadora
+CALL main
+
+Function main:
+    MOD SC $Digite_a_operacao_matematica:_
+    MOD A1 KB
+    CALL Verify A1
+End Function
+
+Function More:
+    MOD SC $JL
+    MOD SC $Digite_o_primeiro_numero:_
+    MOD B1 KB
+    MOD SC $JL
+    MOD SC $Digite_o_segundo_numero:_
+    MOD B2 KB
+    MAT A2 B1 + B2
+    MOD SC $JL
+    MOD SC $Resultado:_
+    MOD SC A2
+    CALL Quest
+End Function
+
+Function Less:
+    MOD SC $JL
+    MOD SC $Digite_o_primeiro_numero:_
+    MOD B1 KB
+    MOD SC $JL
+    MOD SC $Digite_o_segundo_numero:_
+    MOD B2 KB
+    MAT A2 B1 - B2
+    MOD SC $JL
+    MOD SC $Resultado:_
+    MOD SC A2
+    CALL Quest
+End Function
+
+Function Mult:
+    MOD SC $JL
+    MOD SC $Digite_o_primeiro_numero:_
+    MOD B1 KB
+    MOD SC $JL
+    MOD SC $Digite_o_segundo_numero:_
+    MOD B2 KB
+    MAT A2 B1 * B2
+    MOD SC $JL
+    MOD SC $Resultado:_
+    MOD SC A2
+    CALL Quest
+End Function
+
+Function Divi:
+    MOD SC $JL
+    MOD SC $Digite_o_primeiro_numero:_
+    MOD B1 KB
+    MOD SC $JL
+    MOD SC $Digite_o_segundo_numero:_
+    MOD B2 KB
+    MAT A2 B1 / B2
+    MOD SC $JL
+    MOD SC $Resultado:_
+    MOD SC A2
+    CALL Quest
+End Function
+
+Area Final

@@ -1,0 +1,35 @@
+MOD RC #True
+
+Area LoopA
+
+MOD SC $Escreva_o_diretorio_do_arquivo:_
+MOD B1 KB
+
+FileExists A1 B1
+
+If A1 = $1
+GoTo Read
+
+MOD SC $JL
+MOD SC $Este_diretorio_nao_existe!
+MOD SC $JL
+GoTo LoopA
+
+Area Read
+CALL Read B1
+Function Read:File
+    MOD SC $JL
+    FileReadAllText A1 @File
+    
+    MOD SC $JL
+    MOD SC A1
+    MOD SC $JL
+    MOD SC $Deseja_abrir_outro_arquivo?_[S=Sim/N=Nao]
+    MOD B2 KB
+    If B2 = $S
+    GoTo LoopA
+    
+    GoTo Final
+End Function
+
+Area Final

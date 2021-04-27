@@ -1,0 +1,10 @@
+MOD RC #True
+
+MOD SC $Digite_seu_nome:_
+MOD A1 KB
+
+MOD SC $JL
+MOD SC $Seu_nome_e_
+MOD SC A1
+
+Pause APE

@@ -1,0 +1,32 @@
+MOD RC #True
+
+GoTo Receber
+
+Restricted Area Receber
+    MOD SC $Digite_alguma_coisa:_
+    MOD A1 KB
+    MOD SC $JL
+    MOD SC $Digite_outra_coisa:_
+    MOD A2 KB
+    MOD SC $JL
+End Area
+GoTo CVer
+
+Restricted Area Verify
+    If A1 = A2
+    GoTo Equal
+    
+    MOD SC $A1_nao_e_igual_a_A2
+End Area
+GoTo EndA
+
+Restricted Area Equal
+    MOD SC $A1_e_igual_a_A2
+End Area
+GoTo EndA
+
+Area CVer
+GoTo Verify
+
+Area EndA
+Pause APE

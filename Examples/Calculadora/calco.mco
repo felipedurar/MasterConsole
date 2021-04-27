@@ -1,0 +1,23 @@
+Function Verify:Oper
+    If @Oper = $+
+    CALL More
+    
+    If @Oper = $-
+    CALL Less
+    
+    If @Oper = $*
+    CALL Mult
+    
+    If @Oper = $/
+    CALL Divi
+End Function
+
+Function Quest:
+    MOD SC $JL
+    MOD SC $Deseja_fazer_outro_calculo?_[S=Sim;N=Nao]
+    MOD IR KB
+    If IR = $S
+    CALL main
+    
+    GoTo Final
+End Function
