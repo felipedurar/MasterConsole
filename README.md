@@ -1,6 +1,7 @@
 # MasterConsole
 A really simple and small scripting language
 
+![alt text](Icons/MConsole.ico)
 ![alt text](Screenshots/Screenshot_48.png)
 
 # Context
